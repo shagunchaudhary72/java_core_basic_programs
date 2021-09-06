@@ -52,7 +52,7 @@ public class FibonacciSeries {
     static int getSeries(int n){
         if(n<=1)
         return n;
-        else
+        
         return getSeries(n-1)+getSeries(n-2);
     }
 
@@ -68,9 +68,9 @@ public class FibonacciSeries {
     sc.close();
 
     //getSeries(n);
-    System.out.println("Fibonacci Series Using Reccursion : \n");  
+    System.out.println("Fibonacci Series Using Reccursion : ");  
     for(int i=0;i<n;i++){
-        System.out.println(getSeries(i) + " ");
+        System.out.print(getSeries(i) + " ");
     }
 
     }
